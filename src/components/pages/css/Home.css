@@ -1,0 +1,14 @@
+.home {
+    height: 100vh;
+    border: 3px solid white;
+    box-sizing: border-box;
+}
+
+.home-header {
+    text-align: center;
+}
+
+.home-body {
+    display: flex;
+    justify-content: center;
+}

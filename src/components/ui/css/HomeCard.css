@@ -1,0 +1,25 @@
+.home-card {
+    justify-content: center;
+    width: 400px;
+    padding: 10px;
+    margin: 40px;
+    border: 2px solid gray;
+    transition: 0.5s ease;
+}
+
+.home-card:hover {
+    transform: translateY(8px);
+    border-color: chartreuse;
+}
+
+.home-card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    width: 40%;
+    margin: 5px;
+}
