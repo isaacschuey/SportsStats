@@ -2,8 +2,22 @@
     display: flex;
     flex-direction: column;
 
-    background-color: gray;
+    background-color: darkgray;
 
     width: 250px;
     height: 100vh;
+}
+
+.sidebar-header {
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    /* text-align: center; */
+
+    background-color: gray;
+
+    margin: 5px;
+    padding: 10px;
 }

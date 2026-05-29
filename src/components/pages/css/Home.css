@@ -1,14 +1,20 @@
 .home {
-    height: 100vh;
-    border: 3px solid white;
     box-sizing: border-box;
+
+    border: 3px solid white;
+
+    height: 100vh;
 }
 
 .home-header {
+    margin-top: 75px;
     text-align: center;
 }
 
 .home-body {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+    margin-top: 75px;
 }
