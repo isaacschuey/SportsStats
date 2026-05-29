@@ -1,4 +1,4 @@
-import "./css/HomeCard.css";
+
 
 interface HomeCardProps {
   sport: string;
