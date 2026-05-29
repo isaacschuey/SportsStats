@@ -1,3 +1,5 @@
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import Layout from "./components/ui/Layout";
 import Home from "./components/pages/Home";
 
 const App = () => {
@@ -19,7 +21,21 @@ const App = () => {
     },
   ];
 
-  return <Home sports={sports} />;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/home" element={<Home sports={sports} />}></Route>
+
+          <Route path="/mlb"></Route>
+          <Route path="/nba"></Route>
+          <Route path="/nhl"></Route>
+
+          <Route path="*" element={<Navigate to="/home" replace />}></Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 };
 
 export default App;
