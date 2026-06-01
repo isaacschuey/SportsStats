@@ -1,8 +1,14 @@
 .container {
     height: 100%;
     display: flex;
+    background-color: red;
+}
+
+.sidebar {
+    flex: 0 0 225px;
 }
 
 .content {
-    width: 100%;
+    flex: 1;
+    background-color: green;
 }
