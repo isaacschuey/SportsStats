@@ -8,7 +8,7 @@ interface SidebarLinkProps {
 
 const SidebarLink = (props: SidebarLinkProps) => {
   return (
-    <NavLink to={`/${props.sportAbbrev.toLowerCase()}`}>
+    <NavLink className="sidebar-link" to={`/${props.sportAbbrev.toLowerCase()}`}>
       {props.sportAbbrev}
     </NavLink>
   );

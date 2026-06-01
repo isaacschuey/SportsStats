@@ -3,6 +3,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import './app.css'
 import Layout from "./components/ui/layout/Layout";
 import Home from "./components/pages/home/Home";
+import MLB from "./components/pages/mlb/MLB";
 
 const App = () => {
   const sports = [
@@ -29,7 +30,7 @@ const App = () => {
         <Route path="/" element={<Layout sportAbbrevs={sports.map((sport) => sport.abbrev)}/>}>
           <Route path="/home" element={<Home sports={sports} />}></Route>
 
-          <Route path="/mlb"></Route>
+          <Route path="/mlb" element={<MLB />}></Route>
           <Route path="/nba"></Route>
           <Route path="/nhl"></Route>
 
