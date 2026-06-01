@@ -19,6 +19,7 @@ const Home = (props: HomeProps) => {
       <div className="home-body">
         {props.sports.map((sport) => (
           <HomeCard
+            key={`${sport.sport}-${sport.abbrev}`}
             sport={sport.sport}
             abbrev={sport.abbrev}
             desc={sport.desc}

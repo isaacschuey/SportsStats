@@ -1,0 +1,11 @@
+.home-card {
+    border: 2px solid black;
+    width: 200px;
+    padding: 40px;
+}
+
+.home-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

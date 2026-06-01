@@ -1,5 +1,8 @@
 .sidebar {
+    flex: 0 0 250px;
     text-align: center;
+    background-color: orange;
+    border: 2px solid gray;
 }
 
 .sidebar-links {

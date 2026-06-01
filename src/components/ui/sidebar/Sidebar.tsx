@@ -12,9 +12,9 @@ const Sidebar = (props: SidebarProps) => {
         <h3>Sports Stats</h3>
       </div>
       <div className="sidebar-links">
-        <SidebarLink sportAbbrev="Home" />
+        <SidebarLink key="home" sportAbbrev="Home" />
         {props.sports.map((sport) => (
-          <SidebarLink sportAbbrev={sport} />
+          <SidebarLink key={sport} sportAbbrev={sport} />
         ))}
       </div>
     </aside>

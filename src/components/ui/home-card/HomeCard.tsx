@@ -1,3 +1,5 @@
+import './HomeCard.css'
+
 interface HomeCardProps {
   sport: string;
   abbrev: string;
