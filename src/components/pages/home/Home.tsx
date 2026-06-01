@@ -1,3 +1,4 @@
+import './Home.css'
 import HomeCard from "../../ui/home-card/HomeCard";
 
 interface HomeProps {
