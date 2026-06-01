@@ -2,18 +2,19 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 100px;
 }
 
 .home-header {
     text-align: center;
-    margin: 80px;
+    margin-top: 40px;
 }
 
 .home-body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 100px;
+    align-items: flex-start;
+    gap: 50px;
+    height: 100%;
     background-color: purple;
 }
