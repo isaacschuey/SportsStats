@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
 
-import "./css/Layout.css";
-import Sidebar from "./Sidebar";
+import "./Layout.css";
+import Sidebar from "../sidebar/Sidebar";
 
 interface LayoutProps {
   sportAbbrevs: string[];

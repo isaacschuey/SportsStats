@@ -1,5 +1,5 @@
-import "./css/Sidebar.css";
-import SidebarLink from "./SidebarLink";
+import "./Sidebar.css";
+import SidebarLink from "../sidebar-link/SidebarLink";
 
 interface SidebarProps {
   sports: string[];

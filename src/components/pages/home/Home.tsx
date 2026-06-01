@@ -1,4 +1,4 @@
-import HomeCard from "../ui/HomeCard";
+import HomeCard from "../../ui/home-card/HomeCard";
 
 interface HomeProps {
   sports: {

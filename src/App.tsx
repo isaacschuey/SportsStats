@@ -1,8 +1,8 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 
 import './app.css'
-import Layout from "./components/ui/Layout";
-import Home from "./components/pages/Home";
+import Layout from "./components/ui/layout/Layout";
+import Home from "./components/pages/home/Home";
 
 const App = () => {
   const sports = [
