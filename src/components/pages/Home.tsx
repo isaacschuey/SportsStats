@@ -21,7 +21,7 @@ const Home = (props: HomeProps) => {
             sport={sport.sport}
             abbrev={sport.abbrev}
             desc={sport.desc}
-          ></HomeCard>
+          />
         ))}
       </div>
     </div>

@@ -1,16 +1,21 @@
-import { NavLink } from "react-router-dom";
+import "./css/Sidebar.css";
+import SidebarLink from "./SidebarLink";
 
-const Sidebar = () => {
+interface SidebarProps {
+  sports: string[];
+}
+
+const Sidebar = (props: SidebarProps) => {
   return (
     <aside className="sidebar">
       <div className="sidebar-header">
         <h3>Sports Stats</h3>
       </div>
       <div className="sidebar-links">
-        <NavLink to={"/home"}>Home</NavLink>
-        <NavLink to={"/mlb"}>MLB</NavLink>
-        <NavLink to={"/nba"}>NBA</NavLink>
-        <NavLink to={"/nhl"}>NHL</NavLink>
+        <SidebarLink sportAbbrev="Home" />
+        {props.sports.map((sport) => (
+          <SidebarLink sportAbbrev={sport} />
+        ))}
       </div>
     </aside>
   );

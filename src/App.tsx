@@ -26,7 +26,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout sportAbbrevs={sports.map((sport) => sport.abbrev)}/>}>
           <Route path="/home" element={<Home sports={sports} />}></Route>
 
           <Route path="/mlb"></Route>

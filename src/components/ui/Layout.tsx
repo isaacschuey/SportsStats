@@ -1,12 +1,16 @@
 import { Outlet } from "react-router-dom";
 
-import './css/Layout.css'
+import "./css/Layout.css";
 import Sidebar from "./Sidebar";
 
-const Layout = () => {
+interface LayoutProps {
+  sportAbbrevs: string[];
+}
+
+const Layout = (props: LayoutProps) => {
   return (
     <div className="container">
-      <Sidebar />
+      <Sidebar sports={props.sportAbbrevs} />
       <main className="content">
         <Outlet />
       </main>
