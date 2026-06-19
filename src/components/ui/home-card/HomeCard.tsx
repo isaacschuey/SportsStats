@@ -1,18 +1,17 @@
-import './HomeCard.css'
+import type { Sport } from "../../../types";
+import "./HomeCard.css";
 
 interface HomeCardProps {
-  sport: string;
-  abbrev: string;
-  desc: string;
+  sport: Sport;
 }
 
 const HomeCard = (props: HomeCardProps) => {
   return (
     <div className="home-card">
       <div className="home-card-header">
-        <b>{props.sport}</b>
-        <p>{props.abbrev}</p>
-        <p>{props.desc}</p>
+        <b>{props.sport.name}</b>
+        <p>{props.sport.abbreviation}</p>
+        <p>{props.sport.desc}</p>
       </div>
 
       <div className="home-card-body">

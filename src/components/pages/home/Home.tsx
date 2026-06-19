@@ -1,12 +1,9 @@
-import './Home.css'
+import "./Home.css";
 import HomeCard from "../../ui/home-card/HomeCard";
+import type { Sport } from "../../../types";
 
 interface HomeProps {
-  sports: {
-    sport: string;
-    abbrev: string;
-    desc: string;
-  }[];
+  sports: Sport[];
 }
 
 const Home = (props: HomeProps) => {
@@ -18,12 +15,7 @@ const Home = (props: HomeProps) => {
       </div>
       <div className="home-body">
         {props.sports.map((sport) => (
-          <HomeCard
-            key={`${sport.sport}-${sport.abbrev}`}
-            sport={sport.sport}
-            abbrev={sport.abbrev}
-            desc={sport.desc}
-          />
+          <HomeCard key={sport.abbreviation} sport={sport} />
         ))}
       </div>
     </div>
