@@ -4,23 +4,28 @@ import Layout from "./components/ui/layout/Layout";
 import Home from "./components/pages/home/Home";
 import MLB from "./components/pages/mlb/MLB";
 import type { Sport } from "./types";
+import NBA from "./components/pages/nba/NBA";
+import NHL from "./components/pages/nhl/NHL";
 
 const App = () => {
   const sports: Sport[] = [
     {
       name: "Baseball",
       abbreviation: "MLB",
-      desc: "Hunt Down the World Series",
+      description: "Hunt Down the World Series",
+      component: <MLB />,
     },
     {
       name: "Basketball",
       abbreviation: "NBA",
-      desc: "Follow the Road to the Finals",
+      description: "Follow the Road to the Finals",
+      component: <NBA />,
     },
     {
       name: "Hockey",
       abbreviation: "NHL",
-      desc: "Chase the Stanley Cup",
+      description: "Chase the Stanley Cup",
+      component: <NHL />,
     },
   ];
 
@@ -35,9 +40,12 @@ const App = () => {
         >
           <Route path="/home" element={<Home sports={sports} />}></Route>
 
-          <Route path="/mlb" element={<MLB />}></Route>
-          <Route path="/nba"></Route>
-          <Route path="/nhl"></Route>
+          {sports.map((sport) => (
+            <Route
+              path={`/${sport.abbreviation.toLowerCase()}`}
+              element={sport?.component}
+            />
+          ))}
 
           <Route path="*" element={<Navigate to="/home" replace />}></Route>
         </Route>
